@@ -1,0 +1,377 @@
+/* 
+    SiteName:   flipKart.com
+    Author:     souravKumarBGP
+    Developer:  souravKumarBGP
+    Language:   HTML||CSS||JS||BOOTSTRAP-5
+*/
+
+body{
+    font-family: 'Poppins', sans-serif !important;
+    scroll-behavior: smooth;
+    background: #f1f2f4;
+}
+
+/* *********************************************************************************************************
+Common css styling
+******************************************************************************************************** */
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    margin-bottom: 0 !important;
+    padding: 0;
+}
+::-webkit-scrollbar{
+    width: 2px;
+    height: 0px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: green;
+}
+::-webkit-scrollbar-track{
+    background-color: red;
+}
+.border{
+    border: 1px solid darkgrey !important;
+}
+
+
+/* *******************************************************************************************************
+Start nav section styling
+********************************************************************************************************* */
+nav.homeNave{
+    width: 100%;
+    padding: 0 12px;
+}
+/* ************** Start headerTop section styling **************** */
+.homeNave{
+    width: 100%;
+    max-height: 67px;
+    height: 67px;
+    background: #fff;
+    margin-bottom: 10px;
+    padding: 5px 0;
+}
+.homeNave .box_left{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.homeNave .box_left .brandLogo{
+    width: 20%;
+}
+.homeNave .box_left .brandLogo i{
+    font-size: 22px;
+}
+.homeNave .box_left .searchBox{
+    background-color: #e3eefe;
+}
+.homeNave .box_left .brandLogo img{
+    width: 85%;
+}
+.homeNave .box_right{
+    width: 40%;
+    display: flex;
+    font-size: 18px;
+}
+.homeNave .box_right> ul> li> a{
+    display: inline-block;
+    padding: 10px;
+    color: #2e2e2e;
+    transition: all 0.4s;
+    border-radius: 8px;
+}
+.homeNave .box_right> ul > li:first-child:hover{
+    background: #2a55e5;
+    border-radius: 10px;
+}
+.homeNave .box_right> ul > li:first-child:hover >a{
+    color: #fff;
+}
+.homeNave .box_right> ul > li:first-child:hover a .fa-angle-down{
+    transform: rotate(180deg);
+}
+.homeNave .box_right> ul li a span{
+    display: none;
+}
+.homeNave .box_right> ul> li .dropDown{
+    width: 280px;
+    height: 300px;
+    background: #fff;
+    box-shadow: 0px 0px 5px 1px #8080801e;
+    position: absolute;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    display: none;
+    font-size: 15px;
+    z-index: 999;
+}
+.homeNave .box_right> ul > li:first-child:hover > ul{
+    display: block;
+}
+.homeNave .box_right> ul> li .dropDown li a{
+    color: #2e2e2e;
+}
+.homeNave .box_right> ul> li .dropDown li{
+    padding: 6px 12px;
+    margin-bottom: 7px !important;
+}
+.homeNave .box_right> ul> li .dropDown li:hover{
+    background-color: #eeeded9a;
+}
+
+/* *******************************************************************************************************
+Start header section styling
+********************************************************************************************************* */
+header.homePageHeader{
+    width: 100%;
+    padding: 0px 12px;
+}
+/* **************** Start headerTop Styling ************* */
+.homePageHeader .headerTop{
+    width: 100%;
+    height: 150px;
+    padding-top: 10px;
+    position: relative;
+}
+.headerTop .container{
+    overflow-x: scroll;
+    background:#fff;
+}
+.headerTop .box{
+    min-width: 1247px;
+    height: 100%;
+}
+.headerTop .box .items{
+    width: 180px;
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+.headerTop .box .items a{
+    color: #2e2e2e;
+}
+.headerTop .box .items img{
+    height: 80px;
+    padding: 7px;
+}
+.headerTop .box .items:hover a{
+    color: #2a55e5;
+}
+.headerTop .box .items:hover a i{
+    transform: rotate(180deg);
+}/*** End headerTop section styling ***/
+
+/* **************** Start crauser section styling *******  */
+.homePageHeader .crauser{
+    width: 100%;
+    height: 208px;
+    margin-top: 16px;
+}
+.homePageHeader .crauser .carousel-item img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.homePageHeader .crauser button{
+    width: 40px;
+    height: 90px;
+    margin-top: 4.4%;
+    background: #fff !important;
+    opacity: 1;
+}/** End crauser section **/
+
+/* *******************************************************************************************************
+Start main section styling
+********************************************************************************************************* */
+main.homePageMain{
+    width: 100%;
+    padding: 0px 12px;
+}
+/* **************** Start itemsBox1 styling ******************/
+.homePageMain .itemsBox1{
+    width: 100%;
+    height: 345px;
+    margin-top: 20px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+.homePageMain .itemsBox1 .heading{
+    border: 1px solid green;
+}
+.homePageMain .itemsBox1 .container .heading a:first-child{
+    border: 1px solid red;
+    width: 100%;
+    display: inline-block;
+    font-size: 22px;
+    padding-top: 15px;
+    color: #464646;
+}
+.homePageMain .itemsBox1 .container .heading a:last-child{
+    margin-top: 10px;
+    font-size: 18px;
+    background-color: #2a55e5;
+    color: #fff;
+    width: 25px;
+    text-align: center;
+    height: 25px;
+    border-radius: 100%;
+}
+.homePageMain .itemsBox1 .container .box{
+    border: 2px solid yellowgreen;
+    height: 90%;
+    margin: 0;
+    justify-content: space-between;
+    background: #f1f2f4;
+}
+.homePageMain .itemsBox1 .container .box .left{
+    border: 1px solid red;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    overflow-x: scroll;
+    padding-top: 20px;
+}
+.homePageMain .itemsBox1 .container .box .left > div{
+    width: 220px;
+    padding: 8px;
+    height: 100%;
+    text-align: center;
+}
+.homePageMain .itemsBox1 .container .box .left > div a{
+    display: block;
+    border: 1px solid gray;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.price{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #464646;
+}
+.homePageMain .itemsBox1 .container .box .right{
+    border: 1px solid blue;
+    width: 17%;
+    display: none;
+}
+
+
+
+
+
+
+/* *******************************************************************************************************
+Start mediaQuerry section styling
+********************************************************************************************************* */
+@media all and (max-width:768px){
+    .container{
+        max-width: 100% !important;
+        height: 100%;
+        padding: 0 !important;
+    }
+    nav.homeNave{
+        max-width: 448px !important;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    .homeNave .box_left{
+        width: 50%;
+    }
+    .homeNave .box_left .brandLogo{
+        width: 100%;
+    }
+    .homeNave .box_left .brandLogo img{
+        width: 38%;
+        margin-left: 20px;
+    }
+    .homeNave .box_left .searchBox{
+        display: none;
+    }
+    .homeNave .box_right{
+        font-size: 12px;
+        width: 50%;
+        justify-content: end;
+    }
+    
+}
+
+@media all and (min-width:768px) and (max-width:1191px){
+    .container{
+        max-width: 996px !important;
+        height: 100%;
+        padding: 0 !important;
+    }
+    .homeNave{
+        padding: 8px 16px;
+    }
+    .homeNave .box_left{
+        width: 68%;
+    }
+    .homeNave .box_right{
+        width: 32%;
+    }
+    .homeNave .box_left .brandLogo i{
+        display: none;
+    }
+    .homeNave .box_left .brandLogo img{
+        width: 88%;
+    }
+    .homeNave .box_left .searchBox{
+        width: 75%;
+    }
+    .homeNave .box_right > ul{
+        justify-content: space-around;
+        width: 100%;
+    }
+    
+   
+}
+
+@media all and (min-width:1191px){
+    .container{
+        max-width: 1600px !important;
+        height: 100%;
+        padding: 0 !important;
+    }
+    .homeNave{
+        padding: 8px 16px;
+        padding-left: 90px !important;
+    }
+    .homeNave .box_left{
+        width: 55%;
+    }
+    .homeNave .box_left .brandLogo i{
+        display: none;
+    }
+    .homeNave .box_left .searchBox{
+        width: 75%;
+    }
+    .homeNave .box_right{
+        width: 45%;
+    }
+    .homeNave .box_right > ul{
+        padding-left: 30px;
+    }
+   
+    .homeNave .box_right> ul li a{
+        margin-left: 10px;
+    }
+    .homeNave .box_right> ul li a span{
+        display: inline-block;
+        font-size: 18px;
+    }
+    .homePageMain .itemsBox1 .container .box .left{
+        width: 82%;
+    }
+    .homePageMain .itemsBox1 .container .box .right{
+        width: 17%;
+        display: block;
+    }
+}
